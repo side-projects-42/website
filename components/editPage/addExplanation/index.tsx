@@ -25,8 +25,8 @@ export default function AddExplanation({
           <Translation
             name="addExplanationInfo"
             links={[
-              "https://github.com/TheAlgorithms/Algorithms-Explanation",
-              "https://github.com/TheAlgorithms/Algorithms-Explanation/blob/master/en/Sorting%20Algorithms/Quick%20Sort.md",
+              "/Algorithms-Explanation",
+              "/Algorithms-Explanation/blob/master/en/Sorting%20Algorithms/Quick%20Sort.md",
             ]}
           />
         </Typography>

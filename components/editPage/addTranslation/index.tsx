@@ -33,7 +33,7 @@ export default function AddTranslation({
           <Translation
             name="addTranslationInfo"
             links={[
-              "https://github.com/TheAlgorithms/Algorithms-Explanation",
+              "/Algorithms-Explanation",
               algorithm.explanationUrl.en,
             ]}
             variables={{

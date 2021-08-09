@@ -35,7 +35,7 @@ export default function LanguagePage({
           <div>
             <Button
               startIcon={<OpenInNew />}
-              href={`https://github.com/TheAlgorithms/${language.name}`}
+              href={`/${language.name}`}
             >
               {t("githubRepository")}
             </Button>

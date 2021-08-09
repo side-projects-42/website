@@ -41,7 +41,7 @@ export default function AddImplementation({
             )
             .map((langName: Language) => ({
               name: langName,
-              href: `https://github.com/TheAlgorithms/${langName}`,
+              href: `/${langName}`,
             }))}
         />
       </DialogContent>

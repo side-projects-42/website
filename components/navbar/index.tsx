@@ -41,22 +41,22 @@ export default function Navbar({
   const t = useTranslation();
   const [atTop, setAtTop] = useState(false);
   const smallScreen = useMediaQuery("(max-width:800px)");
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
   const langSelectRef = useRef();
   const [langSelectOpen, setLangSelectOpen] = useState(false);
   const router = useRouter();
   const isHome = router.route === "/";
 
-  const menu = [
-    {
-      name: t("aboutTextNavbar"),
-      href: "/#aboutUs",
-    },
-    {
-      name: t("donateButton"),
-      href: "https://liberapay.com/TheAlgorithms/donate",
-    },
-  ];
+  // const menu = [
+  //   {
+  //     name: t("aboutTextNavbar"),
+  //     href: "/#aboutUs",
+  //   },
+  //   {
+  //     name: t("donateButton"),
+  //     href: "https://liberapay.com/TheAlgorithms/donate",
+  //   },
+  // ];
 
   useEffect(() => {
     setAtTop(window.scrollY < 1);
@@ -116,7 +116,7 @@ export default function Navbar({
                 {darkTheme ? <Brightness7 /> : <NightsStay />}
               </IconButton>
               <IconButton
-                href="https://github.com/TheAlgorithms"
+                href=""
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -148,7 +148,7 @@ export default function Navbar({
               <MenuItem>{item.name}</MenuItem>
             </NextLink>
           ))}
-          <NextLink href="https://github.com/TheAlgorithms">
+          <NextLink href="">
             <MenuItem>GitHub</MenuItem>
           </NextLink>
           <MenuItem onClick={switchTheme}>

@@ -169,7 +169,7 @@ export default function Home({
                     <Button
                       variant="contained"
                       className={classes.github}
-                      href="https://github.com/TheAlgorithms/"
+                      href="/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -235,7 +235,7 @@ export default function Home({
             <Tooltip title={t("socialGithub")}>
               <Card>
                 <IconButton
-                  href="https://github.com/TheAlgorithms"
+                  href=""
                   target="_blank"
                   rel="noreferrer"
                   aria-label={t("socialGithub")}
