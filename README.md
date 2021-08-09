@@ -68,18 +68,9 @@ Finally, run the development server:
 yarn dev
 ```
 
-
-
-
-
-
-
 yarn
 
-
-
 yarn fetch-algorithms
-
 
 yarn dev
 
