@@ -11,7 +11,7 @@ export default function Head({
 }) {
   return (
     <NextHead>
-      <title>{title ? `${title} - The Algorithms` : "The Algorithms"}</title>
+      <title>{title ? `${title} - DS-Algo-Codebase` : "DS-Algo-Codebase"}</title>
       <link rel="icon" type="image/svg+xml" href="/logo_t.svg" />
       {description && <meta name="description" content={description} />}
       <meta name="keywords" content={["The Algorithms", ...tags].join(", ")} />
