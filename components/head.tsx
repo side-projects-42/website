@@ -11,16 +11,16 @@ export default function Head({
 }) {
   return (
     <NextHead>
-      <title>{title ? `${title} - DS-Algo-Codebase` : "DS-Algo-Codebase"}</title>
+      <title>{title ? `${title} - The Algorithms` : "The Algorithms"}</title>
       <link rel="icon" type="image/svg+xml" href="/logo_t.svg" />
       {description && <meta name="description" content={description} />}
-      <meta name="keywords" content={["DS-Algo-Codebase", ...tags].join(", ")} />
+      <meta name="keywords" content={["The Algorithms", ...tags].join(", ")} />
       <meta charSet="utf-8" />
       <script type="application/ld+json">
         {`{
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "url": "https://bgoonz-branch-the-algos.vercel.app/",
+  "url": "https://the-algorithms.com",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://the-algorithms.com/search?q={search_term_string}",
