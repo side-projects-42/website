@@ -33,9 +33,7 @@ export default function Footer() {
           <Link href="/#programmingLanguages">
             {t("programmingLanguagesTitle")}
           </Link>
-          <Link href="/#contribute">{t("contributeTitle")}</Link>
-          <Link href="/#donate">{t("donateTitle")}</Link>
-          <Link href="mailto:hello@the-algorithms.com">{t("contact")}</Link>
+
         </div>
         <div className={classes.list}>
           <Link href="/">GitHub</Link>
