@@ -186,8 +186,6 @@ export default function Home({
                       <WeblatePlainIcon color="black" />
                       Weblate
                     </Button>
-                  
-                
                   </div>
                 </div>
               </div>

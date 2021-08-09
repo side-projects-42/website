@@ -53,13 +53,10 @@ let spinner: Ora;
     [...Object.keys(Repositories), "algorithms-explanation"].map(
       (repo) =>
         new Promise<void>((resolve, reject) => {
-          exec(
-            `git clone /${repo}.git`,
-            (err) => {
-              if (err) reject(err);
-              else resolve();
-            }
-          );
+          exec(`git clone /${repo}.git`, (err) => {
+            if (err) reject(err);
+            else resolve();
+          });
         })
     )
   );
@@ -154,10 +151,7 @@ let spinner: Ora;
             if (match) {
               const name = match[1];
               const nName = normalizeAlgorithm(name);
-              const dir = match[2].replace(
-                "/C-Sharp/blob/master/",
-                ""
-              );
+              const dir = match[2].replace("/C-Sharp/blob/master/", "");
               let file: string;
               try {
                 file = (await fs.promises.readFile(dir)).toString();

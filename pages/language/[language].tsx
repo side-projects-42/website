@@ -33,10 +33,7 @@ export default function LanguagePage({
             {getLanguageName(language.name)}
           </Typography>
           <div>
-            <Button
-              startIcon={<OpenInNew />}
-              href={`/${language.name}`}
-            >
+            <Button startIcon={<OpenInNew />} href={`/${language.name}`}>
               {t("githubRepository")}
             </Button>
             {["c", "c-plus-plus", "julia"].includes(
