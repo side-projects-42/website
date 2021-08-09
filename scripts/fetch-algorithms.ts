@@ -53,10 +53,13 @@ let spinner: Ora;
     [...Object.keys(Repositories), "algorithms-explanation"].map(
       (repo) =>
         new Promise<void>((resolve, reject) => {
-          exec(`git clone /${repo}.git`, (err) => {
-            if (err) reject(err);
-            else resolve();
-          });
+          exec(
+            `git clone https://github.com/TheAlgorithms/${repo}.git`,
+            (err) => {
+              if (err) reject(err);
+              else resolve();
+            }
+          );
         })
     )
   );
@@ -116,7 +119,7 @@ let spinner: Ora;
       }
       algorithms[nName].implementations[language] = {
         dir: path.join(...dir.split(path.sep).slice(1)),
-        url: `/${language}/tree/master/${path.join(
+        url: `https://github.com/TheAlgorithms/${language}/tree/master/${path.join(
           ...dir.split(path.sep).slice(1)
         )}`,
         code: highlightCode(
@@ -151,7 +154,10 @@ let spinner: Ora;
             if (match) {
               const name = match[1];
               const nName = normalizeAlgorithm(name);
-              const dir = match[2].replace("/C-Sharp/blob/master/", "");
+              const dir = match[2].replace(
+                "https://github.com/TheAlgorithms/C-Sharp/blob/master/",
+                ""
+              );
               let file: string;
               try {
                 file = (await fs.promises.readFile(dir)).toString();
@@ -215,7 +221,7 @@ let spinner: Ora;
             if (algorithm) {
               algorithm.explanationUrl[
                 locale
-              ] = `/Algorithms-Explanation/tree/master/${dir}`;
+              ] = `https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/${dir}`;
               algorithm.body[locale] = await renderMarkdown(
                 (await fs.promises.readFile(dir))
                   .toString()
