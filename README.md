@@ -68,6 +68,21 @@ Finally, run the development server:
 yarn dev
 ```
 
+
+
+
+
+
+
+yarn
+
+
+
+yarn fetch-algorithms
+
+
+yarn dev
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the website.
 
 Alternatively, you can also use the [Ready-to-Code Gitpod](https://gitpod.io/#https://github.com/TheAlgorithms/website) and easily check how your deployment looks. It will automatically run the commands mentioned above on run.
